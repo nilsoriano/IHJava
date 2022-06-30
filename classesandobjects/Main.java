@@ -1,7 +1,7 @@
 package classesandobjects;
 /* This compiles, but does not run using repl.it's button.
    To run it, paste this into the console:
-   java -classpath .:target/dependency/* classesandobjects/Main 
+   java -classpath .:target/dependency/* classesandobjects/Main
 */
 class Main {
   public static void main(String[] args){
