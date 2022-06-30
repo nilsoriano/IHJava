@@ -1,7 +1,10 @@
+package Introduction_to_Java;
 import java.util.Scanner;
+/* This compiles, but doesn't run using repl.it's button.
+   To run it, write this into the console:
+   java -classpath .:target/dependency/* Introduction_to_Java/Main */
 
 class Main {
-
   // Foundational Data Types
   static void Prework_1() {
     String companyName = "The Awesome Store";
@@ -41,7 +44,7 @@ class Main {
   // Main
   public static void main (String[] args) {
     Scanner exerciseSelector = new Scanner(System.in);
-    System.out.println("Select the Prework snippet you wish to run (1-5)");
+    System.out.println("Select the Prework snippet you wish to run (1-3)");
     int userSelection = exerciseSelector.nextInt();
     
     switch (userSelection) {
@@ -55,9 +58,8 @@ class Main {
         Prework3();
         break;
       default:
-        System.out.println("Input not within expected values.");
+        System.out.println("Input is not within expected values.");
         break;
     }
   }
-  
 }
