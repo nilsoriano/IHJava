@@ -1,7 +1,8 @@
 import java.util.Scanner;
 
 class Main {
-  
+
+  // Foundational Data Types
   static void Prework_1() {
     String companyName = "The Awesome Store";
     int Employees = 135;
@@ -13,9 +14,18 @@ class Main {
     System.out.println("Last contact phone: " + contactPhones[2]);
   }
 
+  // Loops and Conditionals
   static void Prework_2() {
-    for (int i = 0; i < 10 ; i++) {
-      System.out.println(i);
+    double[] doubleList = new double[5];
+    int[] numList = new int[5];
+    String[] stringList = new String[5];
+    boolean[] booleanList = new boolean[5];
+    
+    for (int i = 0; i < doubleList.length ; i++) {
+      System.out.println("The int equals " + doubleList[i]);
+      System.out.println("The double's value is " + numList[i]);
+      System.out.println("The String's content is " + stringList[i]);
+      System.out.println("The boolean evaluates to " + booleanList[i]);
     }
   }
   
