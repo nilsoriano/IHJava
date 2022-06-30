@@ -26,7 +26,7 @@ class Friend {
   public void setPublic(boolean publicProfile){
     this.publicProfile = publicProfile;
   }
-  //getters
+  // getters
   public String getFirstName(){
     return this.firstName;
   }

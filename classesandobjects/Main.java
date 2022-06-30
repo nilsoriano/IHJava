@@ -7,6 +7,14 @@ class Main {
   public static void main(String[] args){
     Car car1 = new Car("Audi", 217823, true, 19800.35);
     Car car2 = new Car("Delorian", 000042, false, 35800.15);
+    
+    System.out.println(Car.describeSale(car1)); 
+    System.out.println(Car.describeSale(car2));
+
+    Car[] carList = {car1, car2};
+    System.out.println("The total value of our current inventory is " + Car.assessInventoryValue(carList) + " euros.");
+    
+    
     /*
     Book book1 = new Book("The Pragmatic Programmer", "David Thomas & Andrew Hunt", 321);
     Book book2 = new Book("Software Craftsmanship", "Sandro Mancuso", 305);

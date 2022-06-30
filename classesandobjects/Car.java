@@ -1,12 +1,12 @@
 package classesandobjects;
 
 class Car {
-  //atributes
+  // atributes
   private String make;
   private boolean forSale;
   private int vin;
   private double price;
-  //constructors
+  // constructors
   public Car (int vin) {
     setVin(vin);
     this.make = "Dacia";
@@ -23,12 +23,7 @@ class Car {
     setMake(make);
     setVin(vin);
     setForSale(forSale);
-    if (this.isForSale()) {
-      setPrice(price);
-      System.out.println("This " + getMake() + " car, with VIN #" + getVin() + ", is for sale: it costs " + price + " euros.");
-    } else {
-      System.out.println("Apologies, this " + getMake() + " car is not for sale");
-    }
+    setPrice(price);  
   }
   // setters
   public void setMake(String make){
@@ -43,7 +38,7 @@ class Car {
   public void setPrice(double price){
     this.price = price;
   }
-  //getters
+  // getters
   public String getMake(){
     return this.make;
   }
@@ -55,5 +50,21 @@ class Car {
   }
   public double getPrice(){
     return this.price;
+  }
+  // Methods II
+  public static String describeSale (Car car){
+    if (car.isForSale()) {
+      return "This car has been built by " + car.getMake() + ", its VIN number is #" + car.getVin() + ", and it can be yours for " + car.getPrice() + " euros.";
+    } else {
+      return "Our apologies, this " + car.getMake() + " is not currently for sale";
+    }
+  }
+  public static double assessInventoryValue(Car[] cars) {
+    double totalValue = 0.00;
+    for (int i = 0; i < cars.length; i++) {
+      double carPrice = cars[i].getPrice();
+      totalValue += carPrice;
+    }
+    return totalValue;
   }
 }
