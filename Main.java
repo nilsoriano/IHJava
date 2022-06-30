@@ -15,7 +15,7 @@ class Main {
   }
 
   // Loops and Conditionals
-  static void Prework_2() {
+  static void Prework2() {
     double[] doubleList = new double[5];
     int[] numList = new int[5];
     String[] stringList = new String[5];
@@ -28,7 +28,17 @@ class Main {
       System.out.println("The boolean evaluates to " + booleanList[i]);
     }
   }
+
+  // Methods I
+  public static void Prework3() {
+    String fullName = getFullName("Michael", "Alcocer");
+    System.out.println(fullName);
+  }
+  public static String getFullName(String firstName, String lastName) {
+    return firstName + " " + lastName;
+  }
   
+  // Main
   public static void main (String[] args) {
     Scanner exerciseSelector = new Scanner(System.in);
     System.out.println("Select the Prework snippet you wish to run (1-5)");
@@ -39,7 +49,10 @@ class Main {
         Prework_1();
         break;
       case 2:
-        Prework_2();
+        Prework2();
+        break;
+      case 3:
+        Prework3();
         break;
       default:
         System.out.println("Input not within expected values.");
