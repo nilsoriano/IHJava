@@ -1,9 +1,9 @@
 package Introduction_to_Java;
 import java.util.Scanner;
-/* This compiles, but doesn't run using repl.it's button.
-   To run it, write this into the console:
-   java -classpath .:target/dependency/* Introduction_to_Java/Main */
-
+/* This compiles, but does not run using repl.it's button.
+   To run it, paste this into the console:
+   java -classpath .:target/dependency/* Introduction_to_Java/Main 
+*/
 class Main {
   // Foundational Data Types
   static void Prework_1() {
