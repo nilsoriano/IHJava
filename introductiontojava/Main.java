@@ -4,6 +4,7 @@ import java.util.Scanner;
    To run it, paste this into the console:
    java -classpath .:target/dependency/* introductiontojava/Main
 */
+/* 
 class Main {
   // Foundational Data Types
   static void Prework_1() {
@@ -63,3 +64,4 @@ class Main {
     }
   }
 }
+*/

@@ -27,4 +27,5 @@ class Main {
     System.out.println(friend2.getFirstName() + " " + friend2.getLastName() + " was born in " + friend2.getBirthplace() + ". The fact that their profile is publicly visible is " + friend2.isPublic() + ".");
     
   }
-} */
+} 
+*/
