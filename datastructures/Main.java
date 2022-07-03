@@ -11,21 +11,21 @@ import java.util.HashMap;
 class Main {
   public static void main (String[] args) {
     List<Pet> perseusPets = new ArrayList<>();
-    perseusPets.add(new Pet("Pegasus", 2557));
-    perseusPets.add(new Pet("Bellepheron's stolen Pegasus", 2764));
+    perseusPets.add(new Pet("Pegasus V2", 2557));
+    perseusPets.add(new Pet("Bellepheron's refactored Pegasus", 2764));
 
     List<Pet> hadesPets = new LinkedList<>();
     hadesPets.add(new Pet("Cerberus", 4652));
     hadesPets.add(new Pet("Lernaean hydra", 4632));
 
     HashMap<String, List<Pet>> petOwners = new HashMap<>();
-    petOwners.put("perseus@mycenae.my", perseusPets);
+    petOwners.put("perseus@mycenae.gr", perseusPets);
     petOwners.put("management@underworld.gr", hadesPets);
 
-    for (String mail : petOwners.keySet()) {
-      System.out.println("Pets assigned to :" + mail);
-      for (List<Pet> pets: petOwners.values()) {
-        System.out.println(pets.get(0).getName());
+    for (HashMap.Entry<String, List<Pet>> o: petOwners.entrySet()) {
+      System.out.println("Pets assigned to user " + o.getKey() + ":");
+      for (Pet pN : o.getValue()) {
+        System.out.println(pN.getName());
       }
     }
   }
