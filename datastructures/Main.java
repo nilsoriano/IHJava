@@ -8,6 +8,17 @@ import java.util.ArrayList;
 
 class Main {
   public static void main (String[] args) {
+    List<Contact> contactList = new ArrayList<>();
+
+    contactList.add(new Contact("Juan",611622633));
+    contactList.add(new Contact("Ana",622633644));
+    contactList.add(new Contact("Juan",633644655));
+
+    for (int i = 0; i < contactList.size(); i++) {
+      System.out.println(contactList.get(i).getName());
+      System.out.println(contactList.get(i).getPhone());
+    }
+    /*
     List<String> brandList = new ArrayList<>();
 
     brandList.add("Mitsurrari");
@@ -23,5 +34,6 @@ class Main {
     for (int i = 0; i < brandList.size(); i++) {
       System.out.println(brandList.get(i));
     }
+    */
   }
 }
