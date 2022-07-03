@@ -19,15 +19,13 @@ class Main {
     hadesPets.add(new Pet("Lernaean hydra", 4632));
 
     HashMap<String, List<Pet>> petOwners = new HashMap<>();
-    petOwners.put("management@underworld.gr", perseusPets);
-    petOwners.put("perseus@mycenae.my", hadesPets);
+    petOwners.put("perseus@mycenae.my", perseusPets);
+    petOwners.put("management@underworld.gr", hadesPets);
 
-    for (int i = 0; i < hadesPets.size(); i++) {
-      for (String mail : petOwners.keySet()) {
-        System.out.println(mail);
-        for (List<Pet> pets: petOwners.values()) {
-          System.out.println(pets.get(i).getName());
-        }
+    for (String mail : petOwners.keySet()) {
+      System.out.println("Pets assigned to :" + mail);
+      for (List<Pet> pets: petOwners.values()) {
+        System.out.println(pets.get(0).getName());
       }
     }
   }
