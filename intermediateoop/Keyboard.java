@@ -1,10 +1,10 @@
-package inheritance;
+package intermediateoop;
 
-class Tower{
+class Keyboard{
   // property
   private int modelNumber;
   // constructor
-  public Tower (int modelNumber) {
+  public Keyboard (int modelNumber) {
     setModelNumber(modelNumber);
   }
    // setter

@@ -1,4 +1,4 @@
-package inheritance;
+package intermediateoop;
 
 class Employee extends Person {
   private String title;

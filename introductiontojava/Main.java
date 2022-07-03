@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 class Main {
   // Foundational Data Types
-  static void Prework_1() {
+  static void IntroToJava1() {
     String companyName = "The Awesome Store";
     int Employees = 135;
     boolean isOpen= true;
@@ -15,11 +15,11 @@ class Main {
     System.out.println("Company name: " + companyName);
     System.out.println("Employees: " + Employees);
     System.out.println("isOpen: " + isOpen);
-    System.out.println("Last contact phone: " + contactPhones[2]);
+    System.out.println("Third contact phone: " + contactPhones[2]);
   }
 
   // Loops and Conditionals
-  static void Prework2() {
+  static void IntroToJava2() {
     double[] doubleList = new double[5];
     int[] numList = new int[5];
     String[] stringList = new String[5];
@@ -34,11 +34,11 @@ class Main {
   }
 
   // Methods I
-  public static void Prework3() {
+  static void IntroToJava3() {
     String fullName = getFullName("Michael", "Alcocer");
     System.out.println(fullName);
   }
-  public static String getFullName(String firstName, String lastName) {
+  static String getFullName(String firstName, String lastName) {
     return firstName + " " + lastName;
   }
   
@@ -51,13 +51,13 @@ class Main {
     
     switch (userSelection) {
       case 1:
-        Prework_1();
+        IntroToJava1();
         break;
       case 2:
-        Prework2();
+        IntroToJava2();
         break;
       case 3:
-        Prework3();
+        IntroToJava3();
         break;
       default:
         System.out.println("Input is not within expected values.");
