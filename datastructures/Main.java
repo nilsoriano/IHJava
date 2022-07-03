@@ -22,9 +22,13 @@ class Main {
     petOwners.put("management@underworld.gr", perseusPets);
     petOwners.put("perseus@mycenae.my", hadesPets);
 
-    for (String key: petOwners.keySet()) {
-      System.out.println(petOwners.get(key));
+    for (int i = 0; i < hadesPets.size(); i++) {
+      for (String mail : petOwners.keySet()) {
+        System.out.println(mail);
+        for (List<Pet> pets: petOwners.values()) {
+          System.out.println(pets.get(i).getName());
+        }
+      }
     }
-    
   }
 }
