@@ -1,4 +1,4 @@
-package inheritance;
+package intermediateoop;
 
 class Desktop {
   // properties

@@ -1,10 +1,10 @@
-package inheritance;
+package intermediateoop;
 
-class Keyboard{
+class Monitor{
   // property
   private int modelNumber;
   // constructor
-  public Keyboard (int modelNumber) {
+  public Monitor (int modelNumber) {
     setModelNumber(modelNumber);
   }
    // setter

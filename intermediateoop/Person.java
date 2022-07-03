@@ -1,4 +1,4 @@
-package inheritance;
+package intermediateoop;
   
 class Person {
   private String name;
