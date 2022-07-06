@@ -7,7 +7,7 @@ class Tower{
   public Tower (int modelNumber) {
     setModelNumber(modelNumber);
   }
-   // setter
+  // setter
   public void setModelNumber(int modelNumber){
     this.modelNumber = modelNumber;
   }
