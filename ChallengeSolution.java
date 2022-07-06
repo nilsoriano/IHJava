@@ -1,7 +1,4 @@
-package javachallenges;
-
 class ChallengeSolution {
-  private Integer max;
 
   public ChallengeSolution () {
   }

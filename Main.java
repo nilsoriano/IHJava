@@ -1,10 +1,6 @@
-package javachallenges;
 import java.util.Scanner;
 import java.util.Random;
-/* This compiles, but does not run using repl.it's button.
-   To run it, paste this into the console:
-   java -classpath .:target/dependency/* javachallenges/Main
-*/
+
 class Main {
   
   public static void main (String[] args) {
