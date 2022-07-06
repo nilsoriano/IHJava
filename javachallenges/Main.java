@@ -1,4 +1,5 @@
 package javachallenges;
+import java.util.Scanner;
 import java.util.Random;
 /* This compiles, but does not run using repl.it's button.
    To run it, paste this into the console:
@@ -7,14 +8,33 @@ import java.util.Random;
 class Main {
   
   public static void main (String[] args) {
+    Scanner challengeSelector = new Scanner(System.in);
     Random rn = new Random();
-    C2 numPrinter = new C2();
-    System.out.println(numPrinter.printNumberInWord(rn.nextInt(10 - 1) + 1));
-    /*
-    Integer[] numList1 = new Integer[]{2,5,1,6,14};
-    C1 maxFinder = new C1 (numList1);
+    Integer[] numList = new Integer[]{21,135,43,86,52};
+    ChallengeSolution cs = new ChallengeSolution();
     
-    System.out.println("The largest integer in the list is " + maxFinder.getMax()); */
-    
+    System.out.println("Select the Challenge snippet you wish to run (1-4)");
+    int userSelection = challengeSelector.nextInt();
+    challengeSelector.close();
+
+    switch (userSelection) {
+      case 1:
+        System.out.println("This list's average equals " + cs.average(numList));
+        break;
+      case 2:
+        int rnInt1 = rn.nextInt((11 - 1) + 1);
+        System.out.println(rnInt1 + " is spelled: " +cs.printNumberInWord(rnInt1));
+        break;
+      case 3:
+        int rnInt2 = rn.nextInt((31 - 1) + 1);
+        System.out.print(rnInt2 + " is an ");
+        cs.checkOddEven(rnInt2);
+        break;
+      case 4:
+        System.out.println("The largest integer in the list is " + cs.maximum(numList));
+        break;
+      default:
+        System.out.println("Input not within expected values.");
+    }
   }
 }
